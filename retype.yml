@@ -3,7 +3,7 @@ output: .retype
 favicon: /assets/branding/logo.png
 meta:
   title: " | Wick Docs"
-url: # Add your website address here
+url: https://writtenmaterial.github.io/wick/
 branding:
   logo: /assets/branding/logo.png
   label: v5.2.1
