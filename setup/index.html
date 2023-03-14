@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732139589831">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 2.4.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Setup | Wick Docs</title>
+    <meta name="title" content="Setup | Wick Docs">
+    <meta name="description" content="Sapphire's setup is fast and smooth, thanks to its easy-to-use dashboard interface." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="/setup/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/setup/">
+    <meta property="og:title" content="Setup | Wick Docs">
+    <meta property="og:description" content="Sapphire's setup is fast and smooth, thanks to its easy-to-use dashboard interface.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/setup/">
+    <meta property="twitter:title" content="Setup | Wick Docs">
+    <meta property="twitter:description" content="Sapphire's setup is fast and smooth, thanks to its easy-to-use dashboard interface.">
+
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../assets/branding/logo.png" rel="icon" />
+    <link href="../resources/css/retype.css?v=2.4.0.732139589831" rel="stylesheet" />
+
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.732139589831" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.732139589831" data-turbo-eval="false" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between grow pr-6 md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-2xl">
+                            <span class="grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../assets/branding/logo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../assets/branding/logo.png">
+                            </span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v5.2.1</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://sapph.xyz/">Home</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://dashboard.sapph.xyz/">Dashboard</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://sapph.xyz/custom-branding">Custom Branding</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://discord.com/invite/RrHJYrh4Mm">Support</a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+        
+                            <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                            style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                        </div>
+        
+                        <!-- Mobile search button mock -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placehokder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button mock -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+                </div>
+            
+                <div class="pl-6 mb-4 mt-1">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://sapph.xyz/">Home</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://dashboard.sapph.xyz/">Dashboard</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://sapph.xyz/custom-branding">Custom Branding</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://discord.com/invite/RrHJYrh4Mm">Support</a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="grow min-w-0 px-6 md:px-16">
+                        <main class="relative pt-6 pb-16">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                
+                                <!-- Page content  -->
+<doc-anchor-target id="setup" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setup">#</doc-anchor-trigger>
+        <span>Setup</span>
+    </h1>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-green-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-green-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Fast &amp; Smooth Setup</h5>
+<p>Sapphire&#x27;s setup is fast and smooth, thanks to its easy-to-use dashboard interface. With just a few clicks, you can invite Sapphire to your Discord server, ensure it has the necessary permissions, and begin exploring all of its features. The dashboard allows for quick and efficient management of Sapphire, making setup a breeze.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="manual-setup">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#manual-setup">#</doc-anchor-trigger>
+        <span>Manual Setup</span>
+    </h2>
+</doc-anchor-target>
+<p>If opting for manual setup, it is imperative to carefully follow each step to ensure that Wick is fully established and operational.</p>
+<blockquote>
+<p>Please note that the manual setup process may take some time. To assist you in this endeavor, we have divided the setup guide into two parts. The first part covers the key components that require modification prior to configuring the security features in the second part.</p>
+</blockquote>
+<p>Furthermore, if you require additional guidance or have any queries, we recommend reaching out to our support team for further assistance.</p>
+<hr />
+<doc-anchor-target id="rescue-key">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#rescue-key">#</doc-anchor-trigger>
+        <span>Rescue Key</span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-red-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
+                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Emphasizing the significance of this step cannot be overstated.</p>
+        </div>
+    </div>
+</div>
+<p>The utilization of the rescue key is an imperative step in confirming your identity as a physical owner of the server. Losing access to your owner account may lead to a loss of control over Wick, underscoring the criticality of this step.</p>
+<p>To retrieve the rescue key, navigate to the servers page on the Wick dashboard and securely save the key or use the QR code for added convenience. For enhanced security, you may opt to utilize the two-factor authentication (2FA) or Auty feature by scanning the QR code. Additionally, it is recommended to explore content related to this topic for a deeper understanding of how to safeguard your Wick account.</p>
+<hr />
+<doc-anchor-target id="wicks-role">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wicks-role">#</doc-anchor-trigger>
+        <span>Wick&#x27;s Role</span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Can cause malfunctions if done incorrectly</p>
+        </div>
+    </div>
+</div>
+<p>Firstly, make sure that you have granted Wick the necessary permissions. Once that is done, you will see a new Wick role added to your server. It is important to note that this role needs to be placed at the top of the role hierarchy in order for Wick to function properly.</p>
+<hr />
+<doc-anchor-target id="automatic-setup">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#automatic-setup">#</doc-anchor-trigger>
+        <span>Automatic Setup</span>
+    </h2>
+</doc-anchor-target>
+<p>Now that we have covered the essential steps, it is time to initiate the automatic setup process. This feature allows Wick to generate a Quarantine role and apply it to all channels in your server. Additionally, Wick will create dedicated #logs and #modlogs channels, and these elements will be automatically set in your statics, providing you with a seamless experience.</p>
+<p>To begin the automatic setup process, simply enter the command &quot;w!setup&quot; and observe a visually stunning live panel showcasing Wick&#x27;s actions.</p>
+<doc-anchor-target id="quarantine-role">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#quarantine-role">#</doc-anchor-trigger>
+        <span>Quarantine Role</span>
+    </h2>
+</doc-anchor-target>
+<p>In order to maintain the security of your server, it is essential to properly configure the Quarantine role in Wick. After the automated setup, a new role named Quarantine will be created, which should be positioned directly under the Wick role to prevent unauthorized access. It is important to note that Wick&#x27;s functionality is dependent on the existence of the Quarantine role.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>If you are unable to locate the Quarantine role after setup, please run &quot;w!setup&quot; to ensure proper configuration.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="wicks-statics">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wicks-statics">#</doc-anchor-trigger>
+        <span>Wick&#x27;s Statics</span>
+    </h2>
+</doc-anchor-target>
+<p>To gain a better understanding of Wick&#x27;s functionalities, it is important to familiarize oneself with the Statics feature, which encompasses roles, channels, and users that Wick depends on. Please note that some Statics, such as the Quarantine role, #logs, and #modlogs, are automatically generated during setup.</p>
+<p>If you are not the Physical Server Owner and wish to set up Wick, the server owner must add you as an Extra Owner using the command &quot;w!statics USER ?add 11,&quot; where USER is replaced by your username, mention, or ID.</p>
+<p>In terms of roles, Main Roles are crucial for Wick&#x27;s functionality and are zero-permission roles that you give to all members in your server. To add a Main Role, use the command &quot;w!statics role ?add 5,&quot; followed by the role&#x27;s mention, name, or ID. It is important to note that Main Roles should not have any dangerous permissions.</p>
+<p>Static Channels refer to channels that are set once and for all, such as the Logging, Mod-Logging, Partnering, and Main Channels. To set a partnering channel, use the command &quot;w!statics CHANNEL ?set 8,&quot; where CHANNEL is replaced by the channel&#x27;s mention, name, or ID. To set the Main Channel, use the command &quot;w!statics CHANNEL ?set 9,&quot; again replacing CHANNEL with the appropriate mention, name, or ID.</p>
+<p>Static Users consist of Trusted Admins and Extra Owners, who have immunity and will never be punished by Wick for their actions. To add a Trusted Admin, use the command &quot;w!statics user ?add 10,&quot; followed by the user&#x27;s mention, username, usertag, or ID. To add an Extra Owner, use the command &quot;w!statics user ?add 11,&quot; again specifying the user&#x27;s details. While it is not recommended to add Trusted Admins or Extra Owners, it is advisable to add your alternate account as an Extra Owner in case you lose access to your main account.</p>
+<doc-anchor-target id="whitelist-stuff">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#whitelist-stuff">#</doc-anchor-trigger>
+        <span>Whitelist Stuff</span>
+    </h2>
+</doc-anchor-target>
+<p>To ensure optimal service with minimal risk of false positives, whitelisting is a crucial step. The table below outlines the objects that can be whitelisted based on their respective commands and types:</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-green-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-green-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Objects Command Type</h5>
+<ul>
+<li>Member w!whitelist @member</li>
+<li>Role w!whitelist @role</li>
+<li>Channel w!whitelist #channel</li>
+<li>Category w!whitelist category-id</li>
+<li>Webhook w!whitelist webhook-id</li>
+</ul>
+        </div>
+    </div>
+</div>
+<p>In addition to the above, you have the option to whitelist permit roles (i.e., staff roles you have designated within Wick) from Antinuke limitations and blacklist words. This can be done on a case-by-case basis or through a total whitelist, which exempts objects from the entirety of Automod. By taking advantage of these features, you can customize your experience with Wick to suit your needs.</p>
+<doc-anchor-target id="automated-moderation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#automated-moderation">#</doc-anchor-trigger>
+        <span>Automated Moderation</span>
+    </h2>
+</doc-anchor-target>
+<p>It is strongly advised to review the Whitelist section before attempting to set up the Auto Mod in order to avoid complications. Wick utilizes an adaptive algorithm known as Heat, which sets it apart from other moderation bots, and utilizes public and hidden filters to analyze messages and behavior in channels. These factors contribute to the total heat generated by a user, which diminishes over time to prevent wrongful timing out of regular users.</p>
+<style>
+    .sample {
+        text-align: center;
+        color: #1956AF;
+        border-radius: 10px;
+        background-color: #E1EDFF;
+        border: 1px solid #1956AF;
+        padding: 20px;
+        margin-bottom: 20px
+    }
+</style>
+<div class="sample"><p>To provide an example, if a message contains both regular content and an advertisement, Wick will calculate the heat generated by the message based on various factors, such as the type of message and the presence of emojis. The Auto Mod will then be triggered if the heat generated exceeds a certain threshold.</p>
+</div>
+<p>In the General Settings section, users can adjust various elements of the heat system, such as enabling or disabling the anti-spam filters and adjusting the maximum heat percentage at which Wick will take action. Premium users can access additional features such as the Heat Panic Mode and Auto Server Lockdown.</p>
+<p>It is important to note that while the default filters are effective, users should customize them according to their needs, particularly by using the dashboard to access the Whitelist section. With its unique Heat algorithm, Wick&#x27;s Auto Mod is a highly efficient and reliable tool for moderating Discord channels.</p>
+<doc-anchor-target id="panick-mode">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#panick-mode">#</doc-anchor-trigger>
+        <span>Panick Mode</span>
+    </h2>
+</doc-anchor-target>
+<p>Wick&#x27;s Anti Nuke system is a highly sought-after and crucial feature for any Discord user. It is important to note that Wick&#x27;s Anti Nuke is enabled by default and can be turned off by using the command &quot;w!antinuke 1 ?off&quot;. Additionally, Wick&#x27;s Anti Nuke system has both minute and hour limits in place, which will result in the quarantine of any Admin who exceeds them. It is recommended that users familiarize themselves with the limits by reviewing them through the dashboard.</p>
+<p>One of Wick&#x27;s Anti Nuke filters is designed to detect malicious activities related to pruning. If users do not wish to utilize this filter, they can turn it off by using the command &quot;w!an 4a ?off&quot;.</p>
+<p>Furthermore, Wick&#x27;s Quarantine Hold feature is enabled by default and will monitor any individual who is quarantined, punishing anyone who attempts to interfere with them or bypass the Anti Nuke system. If users do not wish to utilize this feature, they can turn it off.</p>
+<p>Wick&#x27;s Panic Mode system, which is only available with the Premium subscription, is designed to help users manage their server during an emergency situation. To configure this system, users can refer to the short guide provided. Additionally, Wick&#x27;s Premium subscription also includes a Backups feature, which takes a complete snapshot of the server every three hours and loads the last backup if Panic Mode is triggered.</p>
+<doc-anchor-target id="join-gate">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#join-gate">#</doc-anchor-trigger>
+        <span>Join Gate</span>
+    </h2>
+</doc-anchor-target>
+<p>Wick offers a highly effective join gate for new members joining your Discord server, which complements the verification system. This join gate has been proven to be an efficient system for blocking out raids and unwanted accounts. In addition, it provides several filters that can be customized according to your preferences.</p>
+<p>One of the filters available is the No PfP Filter, which identifies accounts without profile pictures. While not all accounts without profile pictures are raiding accounts, this filter can still be used to eliminate such accounts if desired. To enable or disable this filter, use the command w!jg 2a ?on or ?off, respectively. You can also choose whether Wick timeouts, kicks, bans, or logs the accounts caught by following the format w!jg ACTION ?set 2b.</p>
+<p>Another filter is the Account Age Filter, which allows you to accept accounts that are older than a specific number of days. To enable or disable this filter, use the command w!jg 3a ?on or ?off, respectively. You can also use the same format as above to change the action: w!jg ACTION ?set 3b.</p>
+<p>The Bot Addition Filter is also available, which must be enabled if you don&#x27;t want anyone unauthorized adding bots to your server. To enable or disable this filter, use the command w!jg 4a ?on or ?off, respectively. You can also use the same format as above to change the action: w!jg ACTION ?set 4b.</p>
+<p>The Advertising Names filter is ideal for blocking new members that have invite links as usernames. To enable or disable this filter, use the command w!jg 5a ?on or ?off, respectively. You can also use the same format as above to change the action: w!jg ACTION ?set 5b.</p>
+<p>The Unverified Bots filter is highly recommended as it eliminates bots that are unverified by Discord. To enable or disable this filter, use the command w!jg 6a ?on or ?off, respectively. You can also use the same format as above to change the action: w!jg ACTION ?set 6b.</p>
+<p>If you want to eliminate accounts that Wick finds suspicious, the Suspicious Accounts filter is the one to use. To enable or disable this filter, use the command w!jg 7a ?on or ?off, respectively. You can also use the same format as above to change the action: w!jg ACTION ?set 7b.</p>
+<p>Lastly, the Username Filter allows you to detect any member that has one of your strict or wildcard words. This feature sanitizes all usernames before checking, making it almost impossible to bypass the filter. To enable or disable this filter, use the same format as above: w!jg 8a ?on or ?off, respectively.</p>
+<p>It is important to note that once an account has been flagged and punished, Wick will not lift the punishment if the account later adds a profile picture or has enough days to join. You can have the Unverified Bots filter enabled alongside the Bot Additions Filter with no issues.</p>
+<doc-anchor-target id="join-raid">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#join-raid">#</doc-anchor-trigger>
+        <span>Join Raid</span>
+    </h2>
+</doc-anchor-target>
+<p>The Join Raid feature offered by Wick is a premium service that allows server owners to monitor and track joins, as well as detect and block malicious raid attacks. This feature is particularly useful for large servers that are at a higher risk of being targeted.</p>
+<p>To use Join Raid, it is recommended to review the General Settings, which include Static Flags such as Status, Action, and Warned Roles. By default, the system triggers a flag when 10 accounts join within 10 minutes, but this can be adjusted to suit specific server needs.</p>
+<p>In addition to these Static Flags, Join Raid also includes two algorithms, String Flag and Age Flag, which help to detect potential threats. The String Flag algorithm allows for the addition of specific strings using special syntax operators, while the Age Flag algorithm flags any account that is too young. Join Raid also includes a NoPfP Flag, which targets accounts without profile pictures, and an ID Flag, which efficiently targets automated raids.</p>
+<p>Overall, the Join Raid system is an effective tool for preventing malicious raids and protecting server communities.</p>
+<doc-anchor-target id="verification">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#verification">#</doc-anchor-trigger>
+        <span>Verification</span>
+    </h2>
+</doc-anchor-target>
+<p>To ensure a secure and streamlined process for your server, Wick provides a verification system that utilizes a designated channel featuring a Verify button for users to initiate the verification process. By utilizing the command &quot;w!verification 1&quot;, you can enable or disable this feature and specify actions such as Quarantine, Kick, Ban, or None. Additionally, you can set the target audience to Everyone or Suspicious Accounts using the command &quot;w!v X ?set 3&quot; where &quot;X&quot; represents &quot;all&quot; or &quot;suspicious&quot;. To adjust the verification duration, use &quot;w!v X ?set 5&quot; with &quot;X&quot; representing the desired duration time.</p>
+<p>Moreover, Wick offers different Modes to allow you to customize the verification process, including the Premium-only &quot;Regeneration&quot; mode which generates a new Captcha every specified interval. To adjust the regeneration time, utilize &quot;w!v TIME ?set 12&quot; with &quot;TIME&quot; being the desired interval time. Additionally, the verification process includes Notes sent to the user, which can be disabled using &quot;w!v 13 ?off&quot;.</p>
+<p>Please note that quarantining bots on join is deprecated, and if the verification mode is set to None and you have Premium, the JoinRaid will enable the Captchas and DM Verification once triggered. The None mode, on the other hand, simply means that Wick will not add the member to Quarantine on join. After the initial setup, Wick will automatically create a verification channel and add it to your server&#x27;s statistics, though you can manually do so using &quot;w!s #channel ?set 12&quot;.</p>
+<doc-anchor-target id="miscellaneous">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#miscellaneous">#</doc-anchor-trigger>
+        <span>Miscellaneous</span>
+    </h2>
+</doc-anchor-target>
+<p>If you desire to customize certain behaviors or set a unique prefix, Wick&#x27;s Miscellaneous feature is ideal for you. To quickly adjust these settings, please refer to the instructions below.</p>
+<hr />
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-green-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-green-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Completing Your Wick Setup: A Congratulatory Note</h5>
+<p>Congratulations on successfully completing all the necessary steps to set up Wick! Your dedication and attention to detail have resulted in a fully functional Wick environment. As you continue to explore Wick&#x27;s capabilities, consider diving deeper into related topics such as customization options and advanced features.</p>
+        </div>
+    </div>
+</div>
+
+                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../tags/setup/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>setup</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results />
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../introduction/features/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Wick's Features</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../faq/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">FA​Qs</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2023. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script>window.__DOCS__ = { "title": "Setup", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+</body>
+</html>
